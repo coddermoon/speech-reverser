@@ -1,17 +1,18 @@
 
-// reversed function
 
-function reverseStr(text) {
+
+function reverseStr() {
+
+    const inputData = document.getElementById('letterReverser')
+
   
-    let reversedAll = ''
-    for(let i = text.length-1;  i>= 0 ; i--){
-let element = text[i];
+    let reversedAll = ' ';
+    for(let i = inputData.value.length-1 ;  i>= 0 ; i--){
+let element = inputData.value[i];
 reversedAll += element
 
 
     }
-    console.log(reversedAll)
+ const output = document.getElementById('output').value = reversedAll
 }
 
-const speech = 'hello World';
-reverseStr(speech)
